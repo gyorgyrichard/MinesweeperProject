@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+
+<?import javafx.scene.control.skin.TableHeaderRow?>
+<VBox prefHeight="480" prefWidth="600" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.HighScoreController">
+    <children>
+        <Label text="HighScore" />
+        <TableView fx:id="highScore" editable="false" prefHeight="400" prefWidth="585">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="185" text="Name" />
+                <TableColumn fx:id="score" prefWidth="185" text="Score" />
+                <TableColumn fx:id="time" prefWidth="185" text="Time" />
+            </columns>
+        </TableView>
+        <Button fx:id="backButton" text="Back" onAction="#back" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+</VBox>

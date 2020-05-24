@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<VBox prefHeight="480" prefWidth="600" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.OptionsController">
+    <children>
+        <Label text="Válasz nehézséget." />
+        <ChoiceBox fx:id= "kivalasztas" value="könnyű" >
+            <items>
+                <FXCollections fx:factory="observableArrayList" >
+                    <String fx:id="egy" fx:value="könnyű" />
+                    <String fx:id="ketto" fx:value="közepes" />
+                    <String fx:id="harom" fx:value="nehéz"  />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+
+        <Button fx:id="secondaryButton" text="Apply" onAction="#apply" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
